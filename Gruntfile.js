@@ -6,14 +6,14 @@ module.exports = function (grunt) {
 		less: {
 			src: {
 				expand: true,
-				cwd: "public/css",
+				cwd: "css",
 				src: ["**/*.less"],
-				dest: "public/css",
+				dest: "css",
 				ext: ".css"
 			}
 		},
 		watch: {
-			files: ["public/css/**/*.less"],
+			files: ["css/**/*.less"],
 			tasks: ["less"]
 		}
 	});
